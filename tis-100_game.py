@@ -26,7 +26,7 @@ async def event_message(ctx):
 	if ctx.author.name.lower() == os.environ['BOT_NICK'].lower():
 		return
 	await bot.handle_commands(ctx)
-
+# If you ever want this to work on your machine do change coordinates to fit your screen and setup
 	if '-segment1' in ctx.content.lower():
 		pyautogui.click(x=1709, y=194)
 
